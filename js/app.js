@@ -16,7 +16,7 @@ const musics = [
     id: 1,
     src: "./public/musics/bende-naf-ta-khate-saf.mp3",
     coverSrc: "public/cover1.jpg",
-    title: "بند ناف تا قاف",
+    title: " بند ناف تا خط صاف",
     artist: "یاس",
   },
   {
