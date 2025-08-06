@@ -57,6 +57,7 @@ function tenSecBackforward() {
 }
 function forwardNextSong() {
   musicCounter = (musicCounter + 1) % musics.length;
+  music.pause();
   music.src = musics[musicCounter].src;
   musicInformation.innerHTML = `${musics[musicCounter].title} - ${musics[musicCounter].artist}`;
   musicCover.src = musics[musicCounter].coverSrc;
@@ -64,6 +65,7 @@ function forwardNextSong() {
 function forwardBacktSong() {
   if (musicCounter >= 1) {
     musicCounter = (musicCounter - 1) % musics.length;
+    music.pause();
     music.src = musics[musicCounter].src;
     musicInformation.innerHTML = `${musics[musicCounter].title} - ${musics[musicCounter].artist}`;
     musicCover.src = musics[musicCounter].coverSrc;
